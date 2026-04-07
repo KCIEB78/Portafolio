@@ -1,6 +1,6 @@
 # **Archivo referente a los diferentes tipos de textos que se pueden insertar en Python**
 
-1. Para insertar un texto, en Google Colab y Visual Code Studio, basta con ir a la barra de herramientas y dar clic en la herramienta " + Texto "
+1. Para insertar un texto, en Google Colab y Visual Studio Code, basta con ir a la barra de herramientas y dar clic en la herramienta " + Texto "
 
 2. Para insertar un texto en Anaconda - JupyterLab, basta con agregar un bloque con el símbolo " + ", predeterminadamente el bloque se genera de tipo " Código "; para cambiar el tipo, basta con ir a la misma barra de herramientas y abrir el menú desplegable del recuadro donde dice " Code " y seleccionar " Markdown "
 
@@ -14,13 +14,13 @@ Para la inserción de títulos o subtítulos, basta con escribir un " # " al ini
 
 - Subtítulo de " primer nivel ": Escribir dos " # " - ## Subtítulo de ejemplo
 
-- Subtítulo de " segundo nivel ": Escribir dos " # " - ### Subtítulo de ejemplo
+- Subtítulo de " segundo nivel ": Escribir tres " # " - ### Subtítulo de ejemplo
 
-- Subtítulo de " tercer nivel ": Escribir dos " # " - #### Subtítulo de ejemplo
+- Subtítulo de " tercer nivel ": Escribir cuatro " # " - #### Subtítulo de ejemplo
 
-- Subtítulo de " cuarto nivel ": Escribir dos " # " - ##### Subtítulo de ejemplo
+- Subtítulo de " cuarto nivel ": Escribir cinco " # " - ##### Subtítulo de ejemplo
 
-- Subtítulo de " quinto nivel ": Escribir dos " # " - ###### Subtítulo de ejemplo
+- Subtítulo de " quinto nivel ": Escribir seis " # " - ###### Subtítulo de ejemplo
 
 El " quinto nivel " de subtítulos es el último permitido de Python, si se ejecuta la línea con más de seis " # ":
 
@@ -58,17 +58,17 @@ Estos primeros elementos de la lista automáticamente el entorno aplica un color
 
 = Séptimo elemento de la lista; pero, que no acepta el " = " al inicio para considerarlo como ícono de una " lista "
 
-< Octavo elemento de la lista; pero, que no acepta el " < "al inicio para considerarlo como ícono de una " lista "
+< Octavo elemento de la lista; pero, que no acepta el " < " al inicio para considerarlo como ícono de una " lista "
 
 ~ Noveno elemento de la lista; pero, que no acepta el " ~ " al inicio para considerarlo como ícono de una " lista "
 
 ***Estos elementos de la lista solamente son ejemplos en dado caso de escribir otros símbolos aparte***
 
-### *2.2.3. Símbolos y caracteres especiales aplicables en ambos " entornos ":*
+### *2.2.3. Símbolos especiales aplicables:*
 
 > Décimo elemento de la lista; pero, que al momento de escribir un " > " lo considera una " cita de código "
 
-Este elemento de " cita " se utiliza en diferentes contextos, más abajo en otro apartado menciono los usos y ejemplos
+Este elemento que genera una " cita de código " se utiliza en diferentes contextos, más abajo en otro apartado menciono los usos y ejemplos
 
 ◦ Undécimo elemento de la lista donde se escribió un " ◦ " (Círculo vacío) al inicio
 
@@ -82,7 +82,7 @@ Este elemento de " cita " se utiliza en diferentes contextos, más abajo en otro
 
 ⚠ Décimo sexto elemento de la lista donde se escribió un " ⚠ " al inicio
 
-Estos elementos al ser caracteres especiales, aunque el " entorno " si los acepta y los " ejecuta " tal cual como son, lo recomendable es solamente usarlos en documentaciones o archivos donde solamente se realicen " notas " o inclusive " manuales de uso "
+Estos elementos al ser " símbolos especiales ", aunque el " entorno " si los acepta y los " ejecuta " tal cual como son, lo recomendable es solamente usarlos en documentaciones o archivos donde solamente se realicen " notas " o inclusive " manuales de uso "
 
 De igual manera si se quieren colocar, recomiendo encarecidamente buscarlos en Internet para simplemente poder copiarlos y pegarlos; ya que, algunos no cuentan con una combinación de letras del " Código ASCII " que permita insertarlos
 
@@ -171,7 +171,7 @@ Para aplicar el formato de texto " Cursiva " en medio de textos, títulos o subt
 
 Para aplicar el formato de texto " Subrayado " al texto, se debe de escribir una " Etiqueta HTML " que permite aplicar este tipo de formato; para esto, se debe de escribir: " < "," u ", " > " **AL INICIO** del texto; pero, para evitar que siga subrayando otras líneas de texto de abajo, se debe de escribir la otra " Etiqueta HTML ": " < ", " / ", " u ", " > " **AL FINAL** del texto para " cerrar " correctamente el formato:
 
-> Escribí cada caracter por separado tanto para " abrir ", como para " cerrar " el formato, para evitar que se aplicara automáticamente el mismo y pudiera aparecer en el texto
+> Escribí cada símbolo por separado tanto para " abrir ", como para " cerrar " el formato, para evitar que se aplicara y apareciera en el texto
 
 - <u> Texto de ejemplo donde se abre la " Etiqueta HTML " y se cierra correctamente para aplicar el formato " Subrayado " </u>
 
@@ -181,7 +181,7 @@ NO SE CERRÓ correctamente, siendo este un texto escrito en una línea completam
 
 #### *2.3.3.2. Aplicación en títulos y subtítulos:*
 
-Para aplicar el formato de texto " Subrayado " en títulos y subtítulos es necesario escribir la " Etiqueta HTML ": " < "," u ", " > " **DESPUÉS** del " # ", sin olvidar agregar la otra " Etiqueta HTML ": " < ", " / ", " u ", " > " **AL FINAL** para " cerrar " correctamente el formato:
+Para aplicar el formato de texto " Subrayado " en títulos y subtítulos es necesario escribir la " Etiqueta HTML " para abrir el formato ("< "," u ", " > ") **DESPUÉS** del " # ", sin olvidar agregar la otra " Etiqueta HTML " (< ", " / ", " u ", " > ") **AL FINAL** para cerrarla correctamente:
 
 ###### <u>Título o subtítulo de ejemplo donde se aplica la " Etiqueta HTML " correctamente y se cierra </u>
 
@@ -193,7 +193,7 @@ o texto de otra línea </u>
 
 #### *2.3.3.3. Aplicación en medio de textos, títulos y subtítulos:*
 
-Para aplicar el formato de texto **" Subrayado "** en medio de textos, títulos o subtítulos **OBLIGATORIAMENTE**:
+Para aplicar el formato de texto **" Subrayado "** en medio de textos, títulos o subtítulos **OBLIGATORIAMENTE** (lo menciono ya que hice las pruebas varias veces para detectar estos mismos " fallos / bugs "):
 
 - La " Etiqueta HTML ": " < ", " u ", " > " **DEBE IR SEPARADA DE LA PRIMERA LETRA** de la palabra o conjunto de palabras que se quieran subrayar:
 
@@ -213,7 +213,7 @@ Para aplicar el formato de texto **" Subrayado "** en medio de textos, títulos 
 
 #### *2.3.4.1. Aplicación en todo el texto:*
 
-Para aplicar el formato de texto " Tachado ", basta con escribir dos veces el caracter " ~ " (ALT + 126) **PEGADOS A LA PRIMERA Y ÚLTIMA PALABRA** del mismo:
+Para aplicar el formato de texto " Tachado ", basta con escribir dos veces el símbolo " ~ " (ALT + 126) **PEGADOS A LA PRIMERA Y ÚLTIMA PALABRA** del mismo:
 
 - ~~Texto de ejemplo donde se aplica correctamente el formato de texto " Tachado " donde se escribieron los " ~ " pegados al texto~~
 
@@ -223,7 +223,7 @@ Para aplicar el formato de texto " Tachado ", basta con escribir dos veces el ca
 
 - ~ Texto de ejemplo donde NO se aplica el formato de texto " Tachado "~~
 
-> En este caso, al momento de escribir ambos " ~ " separados del texto, el " entorno " si muestra la previsualización de como quedaría el formato; pero, como se puede ver, no lo aplica correctamente
+> En este caso, al momento de escribir ambos " ~ " separados del texto, el " entorno " si muestra la previsualización del formato; pero, no lo aplica correctamente como se puede ver
 
 #### *2.3.4.2. Aplicación en títulos y subtítulos:*
 
@@ -235,7 +235,7 @@ Para aplicar el formato de texto " Tachado " a un título y subtítulo, **OBLIGA
 
 ###### ~~ Título o subtítulo de ejemplo donde NO se aplica el formato de texto " Tachado "~
 
-#### *2.3.4.3. Aplicación en medio de textos, títulos y subtítulos
+#### *2.3.4.3. Aplicación en medio de textos, títulos y subtítulos*
 
 En dado caso de querer aplicarlo en medio de un texto, basta con agregar ambos " ~ " **PEGADOS** a las palabras donde se quiera aplicar el formato
 
@@ -257,7 +257,7 @@ En dado caso de querer aplicarlo en medio de títulos o subtítulos, basta con a
 
 Para " abrir " correctamente la combinación de formatos, basta con seguir esta jerarquización:
 
-- **PRIMERO** se escriben los " * " para poder aplicar correctamente los formatos de texto **" Negritas "** y *"Cursiva"*
+- **PRIMERO** se escriben los " * " para poder aplicar correctamente los formatos de texto **" Negritas "** y *" Cursiva "*
 
 - **DESPUÉS** se escriben los " ~ " para poder aplicar correctamente el formato de texto **~~" Tachado "~~**
 
@@ -269,7 +269,7 @@ Y para " cerrar " correctamente cada uno de los formatos, la jerarquización se 
 
 - **DESPUÉS** se escriben los " ~ " para poder aplicar correctamente el formato de texto **~~" Tachado "~~**
 
-- **Y AL FINAL** se escriben los " * " para poder aplicar correctamente los formatos de texto **" Negritas "** y *"Cursiva"*
+- **Y AL FINAL** se escriben los " * " para poder aplicar correctamente los formatos de texto **" Negritas "** y *" Cursiva "*
 
 ##### 2.4.1.2 Combinación de dos formatos:
 
@@ -319,7 +319,7 @@ Para " abrir " correctamente la combinación de formatos, basta con seguir esta 
 
 Y para " cerrar " correctamente cada uno de los formatos, la jerarquización se aplica de manera inversa:
 
-- **PRIMERO** se escribe la " Etiquetas HTML ": **" < ", " / ", " u ", " > "**
+- **PRIMERO** se escribe la " Etiqueta HTML ": **" < ", " / ", " u ", " > "**
 
 - **DESPUÉS** se escriben los " ~ " para poder aplicar correctamente el formato de texto **~~" Tachado "~~**
 
@@ -367,7 +367,7 @@ Para evitar la saturación visual solamente colocaré un único ejemplo tanto pa
 
 - Texto de ejemplo donde se aplica la combinación de formatos: ***" Negritas con Cursiva"***, **~~" Negritas con Tachado "~~**, **<u>" Negritas con Subrayado "</u>**, *~~" Cursiva con Tachado "~~*, *<u> "Cursiva con Subrayado"</u>*, ~~<u> "Subrayado con Tachado"</u>~~, ***<u> " Negritas, Cursiva y Subrayado "</u>***, ***~~" Negritas, Cursiva y Tachado "~~***, **~~<u> " Negritas, Tachado y Subrayado "</u>~~**, *~~<u> " Cursiva, Tachado y Subrayado "</u>~~*, ***~~<u> Negritas, Cursiva, Subrayado y Tachado</u>~~*** en medio de manera correcta
 
-###### Título o subtítulo de ejemplo donde se aplica la combinación de formatos: ***" Negritas con Cursiva"***, **~~" Negritas con Tachado "~~**, **<u >" Negritas con Subrayado "</u>**, *~~" Cursiva con Tachado "~~*, *<u> "Cursiva con Subrayado"</u>*, ~~<u> "Subrayado con Tachado"</u>~~, ***<u> " Negritas, Cursiva y Subrayado "</u>***, ***~~" Negritas, Cursiva y Tachado "~~***, **~~<u> " Negritas, Tachado y Subrayado "</u>~~**, *~~<u> " Cursiva, Tachado y Subrayado "</u>~~*, ***~~<u> Negritas, Cursiva, Subrayado y Tachado</u>~~*** en medio de manera correcta
+###### Título o subtítulo de ejemplo donde se aplica la combinación de formatos: ***" Negritas con Cursiva"***, **~~" Negritas con Tachado "~~**, **<u>" Negritas con Subrayado "</u>**, *~~" Cursiva con Tachado "~~*, *<u> "Cursiva con Subrayado"</u>*, ~~<u> "Subrayado con Tachado"</u>~~, ***<u> " Negritas, Cursiva y Subrayado "</u>***, ***~~" Negritas, Cursiva y Tachado "~~***, **~~<u> " Negritas, Tachado y Subrayado "</u>~~**, *~~<u> " Cursiva, Tachado y Subrayado "</u>~~*, ***~~<u> Negritas, Cursiva, Subrayado y Tachado</u>~~*** en medio de manera correcta
 
 ---
 
@@ -438,7 +438,7 @@ Algunas situaciones donde se pueden llegar a utilizar las citas de código son:
 
 Hay que evitar usar las citas de código cuando:
 
-- Se está escribiendo un texto normal (en caso de ser un párrafo SI puede ser utilizado)
+- Se está escribiendo un texto normal (a menos que se escriba un párrafo)
 - Se está escribiendo una lista de texto
 - Se está escribiendo un código
 
@@ -456,7 +456,7 @@ Para editar o revisar una celda de texto en Google Colab, JupyterLab o Visual Co
 
 Para poder ver el resultado final o " ejecutar " el código de texto para aplicar formatos, títulos, etc..., solamente hay que presionar " ESC "
 
-> Para poder ver el como funcionan todos los apartados que requieren de un caracter especial (títulos, subtítulos, formatos de texto, citas, lista de texto, etc...) es necesario abrir el archivo " .ipynb " en cualquier " entorno " y entrar en el modo " edición " de las mismas celdas para poder ver de mejor manera como se colocan
+> Para poder ver la escritura correcta de todos los apartados que requieren de " * " , " ~ ", etc... (títulos, subtítulos, formatos de texto, citas, lista de texto, etc...); es necesario abrir el archivo " .ipynb " en cualquier " entorno " y entrar en el modo " edición " de las mismas celdas para poder ver de mejor manera como se colocan
 
 ---
 
@@ -484,7 +484,7 @@ Para poder ver el resultado final o " ejecutar " el código de texto para aplica
 
 - En general los formatos de texto usualmente usados son: " Negritas ", " Cursiva " y " Tachado ", siendo que las " Etiquetas HTML " realmente se usan en otros aspectos o situaciones, simplemente quise apuntar aquellas que normalmente uso en Microsoft Word por si llegara a usarlas en otros documentos
 
-- Los formatos tienen bastantes maneras de " fallar " o no " aplicarse correctamente ", por eso propuse la " jerarquización " que menciono en el apartado " 2.4. "; ya que son muy susceptibles a no aplicarse correctamente, en caso de que no se escriban en lugares muy específicos cualquiera de los símbolos: " * ", " ~ " o " Etiquetas HTML ", igual por eso quise agregar uno que otro ejemplo al proposito de la visualización de estos " errores "
+- Los formatos tienen bastantes maneras de " fallar " o no " aplicarse correctamente ", por eso propuse la " jerarquización " que menciono en el apartado " 2.4. "; ya que son muy susceptibles a no aplicarse correctamente. Ésto, en cualquier caso el que NO se escriban en lugares muy específicos cualquier: " * ", " ~ " o " Etiquetas HTML "; por eso mismo quise agregar a propósito para que pudieran verse estos " errores "
 
 - En plataformas como GitHub o cualquier otra que se utilice para poder ver códigos de programación, el formato de texto " Subrayado " puede que no se visualice correctamente; por lo que, es más recomendable descargar el archivo y abrirlo en cualquiera de los " entornos " que se mencionaron
 
