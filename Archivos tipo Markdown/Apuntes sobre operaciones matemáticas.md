@@ -577,7 +577,7 @@ De igual manera, cualquier signo de agrupación puede utilizarse para implicar *
 
 - División: **+ / + = +** | **- / - = +** | **+ / - = -** | **- / + = -**
 
-- Ejemplo 1: " 8(45)(20) / 8[45][20] / 8{45}{20} "; se interpretan como " 8 * (45) * (20) / 8 * [45] * [20] / 8 * {45} * {20} "
+- Ejemplo 1: " 8(45)(20) / 8[45][20] / 8{45}{20} "; siguiendo la regla, estas expresiones se deben de interpretar como " 8 * (45) * (20) / 8 * [45] * [20] / 8 * {45} * {20} "
 
 - Ejemplo 2: " 8 - (-45)(20) "; se interpreta como " 8 - (-45) * (20) "; y teniendo como resultado " 8 - (-900) = 8 + 900 = 908 "
 
